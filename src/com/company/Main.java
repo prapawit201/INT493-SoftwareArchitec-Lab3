@@ -40,16 +40,6 @@ public class Main {
                     clientCh.register(selector, SelectionKey.OP_READ);
                     clients.add(clientCh);
                 }
-//                if (key.isWritable()) {
-//                    SocketChannel ch = (SocketChannel) key.channel();
-//                    ByteBuffer buf = ByteBuffer.allocate(20);
-//                    String message = "Connected";
-//                    buf.put(message.getBytes());
-//                    buf.flip();
-//                    ch.write(buf);
-//                    ch.configureBlocking(false);
-//                    ch.register(selector, SelectionKey.OP_READ);
-//                }
                 if (key.isReadable()) {
                     SocketChannel ch = (SocketChannel) key.channel();
                     ByteBuffer buffer = ByteBuffer.allocate(20);

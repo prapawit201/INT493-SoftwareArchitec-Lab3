@@ -82,7 +82,6 @@ public class Client {
 //                                    buf2.put(message.getBytes());
 //                                    buf2.flip();
 //                                    ch2.write(buf2);
-//
 //                                    ch.read(buf2);
 //                                    buf2.flip();
 //                                    System.out.println(new String(buf2.array()));
